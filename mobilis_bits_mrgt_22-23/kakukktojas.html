@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css"></link>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-2"></meta>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet"></link>
+	<link rel="shortcut icon" type="image/x-icon" href="misc/mobilis_logo.ico"></link>
+	<title>Mobilis Bits MRGT</title>
+</head>
+<body onresize="Logo()" onload="loadNavbar()">
+    <div class="topnav" id="navbar"></div>
+    <!-- <a href="kakukktojas_en.html">CHANGE TO ENGLISH</a> -->
+    <h1>Kattints a kakukktojásra!</h1>
+    <h2 id="odd-congrats">Szép munka!</h2>
+    <h2 id="odd-tryagain">Próbáld újra!</h2>
+    <table class="odd-one" id="odd-1">
+        <tr>
+            <td onclick="selectOdd('odd-busz')" id="odd-busz" class="">Busz</td>
+            <td onclick="selectOdd('odd-bicikli')" id="odd-bicikli" class="">Bicikli</td>
+            <td onclick="selectOdd('odd-auto')" id="odd-auto" class="">Autó</td>
+            <td onclick="selectOdd('odd-repulo')" id="odd-repulo" class="">Repülő</td>
+        </tr>
+    </table>
+    <table class="odd-one" id="odd-2">
+        <tr>
+            <td onclick="selectOdd('odd-laptop')" id="odd-laptop" class="">Laptop</td>
+            <td onclick="selectOdd('odd-pirito')" id="odd-pirito">Kenyérpirító</td>
+            <td onclick="selectOdd('odd-poster')" id="odd-poster">Poszter</td>
+            <td onclick="selectOdd('odd-fridge')" id="odd-fridge">Hűtőszekrény</td>
+        </tr>
+    </table>
+    <table class="odd-one" id="odd-3">
+        <tr>
+            <td onclick="selectOdd('odd-foci')" id="odd-foci">Foci</td>
+            <td onclick="selectOdd('odd-deszka')" id="odd-deszka">Gördeszka</td>
+            <td onclick="selectOdd('odd-tavauto')" id="odd-tavauto">Távirányítós Autó</td>
+            <td onclick="selectOdd('odd-hinta')" id="odd-hinta">Hinta</td>
+        </tr>
+    </table>
+    <table class="odd-one" id="odd-4">
+        <tr>
+            <td onclick="selectOdd('odd-lampa')" id="odd-lampa">Lámpa</td>
+            <td onclick="selectOdd('odd-eger')" id="odd-eger">Egérfogó</td>
+            <td onclick="selectOdd('odd-mosogato')" id="odd-mosogato">Mosogatógép</td>
+            <td onclick="selectOdd('odd-tablet')" id="odd-tablet">Tablet</td>
+        </tr>
+    </table>
+    <p onclick="check2()" id="odd-check">Ellenőrzés!</p>
+    <p onclick="window.location.reload()" id="odd-reset">Visszaállítás!</p>
+<script src="java.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+</html>

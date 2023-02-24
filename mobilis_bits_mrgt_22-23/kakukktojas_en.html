@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css"></link>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-2"></meta>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet"></link>
+	<link rel="shortcut icon" type="image/x-icon" href="misc/mobilis_logo.ico"></link>
+	<title>Mobilis Bits MRGT</title>
+</head>
+<body onresize="Logo()" onload="loadNavbar()">
+    <div class="topnav" id="navbar"></div>
+    <a href="kakukktojas.html">CHANGE TO HUNGARIAN</a>
+    <h1>Click the odd one out!</h1>
+    <h2 id="odd-congrats">Good Job!</h2>
+    <h2 id="odd-tryagain">Try again!</h2>
+    <table class="odd-one" id="odd-1">
+        <tr>
+            <td onclick="selectOdd('odd-busz')" id="odd-busz" class="">Bus</td>
+            <td onclick="selectOdd('odd-bicikli')" id="odd-bicikli" class="">Bike</td>
+            <td onclick="selectOdd('odd-auto')" id="odd-auto" class="">Car</td>
+            <td onclick="selectOdd('odd-repulo')" id="odd-repulo" class="">Plane</td>
+        </tr>
+    </table>
+    <table class="odd-one" id="odd-2">
+        <tr>
+            <td onclick="selectOdd('odd-laptop')" id="odd-laptop" class="">Laptop</td>
+            <td onclick="selectOdd('odd-pirito')" id="odd-pirito">Toaster</td>
+            <td onclick="selectOdd('odd-poster')" id="odd-poster">Poster</td>
+            <td onclick="selectOdd('odd-fridge')" id="odd-fridge">Fridge</td>
+        </tr>
+    </table>
+    <table class="odd-one" id="odd-3">
+        <tr>
+            <td onclick="selectOdd('odd-foci')" id="odd-foci">Soccer</td>
+            <td onclick="selectOdd('odd-deszka')" id="odd-deszka">Skateboard</td>
+            <td onclick="selectOdd('odd-tavauto')" id="odd-tavauto">Remote control car</td>
+            <td onclick="selectOdd('odd-hinta')" id="odd-hinta">Swing</td>
+        </tr>
+    </table>
+    <table class="odd-one" id="odd-4">
+        <tr>
+            <td onclick="selectOdd('odd-lampa')" id="odd-lampa">Lamp</td>
+            <td onclick="selectOdd('odd-eger')" id="odd-eger">Mousetrap</td>
+            <td onclick="selectOdd('odd-mosogato')" id="odd-mosogato">Dishwasher</td>
+            <td onclick="selectOdd('odd-tablet')" id="odd-tablet">Tablet</td>
+        </tr>
+    </table>
+    <p onclick="check2()" id="odd-check">Check!</p>
+    <p onclick="window.location.reload()" id="odd-reset">Reset!</p>
+<script src="java.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+</html>
